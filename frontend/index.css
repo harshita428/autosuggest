@@ -2,3 +2,17 @@ h1{
     color: #ff0000;
 
 }
+/*property: value*/
+#home-intro{
+    text-align: center;
+    border: 3px solid #4d84dc;
+    
+}
+#home-intro:hover{
+    background-color: #b0c6ea;
+}
+
+
+#p2{
+    color: #2574f3;
+}
