@@ -1,5 +1,5 @@
 h1{
-    color: #32bde7;
+    color: #f46d88;
 
 }
 /*property: value*/
@@ -42,15 +42,21 @@ h1{
 img{
   width: 300px;
   height: 300px;
+  border-radius: 5px;
 }
 
 #action{
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid #ffa36a;
   margin : 10px;
   height: 500px;
+  border-radius: 10px;
 }
 button{
     width:100%;
+    background-color: #f7d167;
+    border-color: #fbc739;
+    color: #714b05;
+    border-radius: 5px;
 }
 
