@@ -13,6 +13,7 @@ const users = [
 ];
 let curUserId = 0;
 function toggle(){
+  console.log("frontend")
   if(curUserId == 0)
     curUserId = 1;
   else
@@ -24,5 +25,20 @@ function toggle(){
   // gender
   document.getElementById("card-gender").innerText = users[curUserId].gender;
 }
-
-console.log("Hello from JS");
+function getRandomUser(){
+    fetch("https://randomuser.me/api/")
+        .then(response => {
+            return response.json();
+        })
+        .then(function(parsedData){
+            // console.log(parsedData);
+            let gender= parsedData.results[0].gender;
+            let first= parsedData.results[0].name.first;
+            let last= parsedData.results[0].name.last;
+            let name= first + " " + last;
+            let imageUrl= parsedData.results[0].picture.large;
+            document.getElementById("img").src = imageUrl;
+            document.getElementById("card-name").innerText = name;
+            document.getElementById("card-gender").innerText = gender;
+        });
+}

@@ -1,15 +1,15 @@
 h1{
-    color: #ff0000;
+    color: #32bde7;
 
 }
 /*property: value*/
 #home-intro{
     text-align: center;
-    border: 3px solid #4d84dc;
+    border: 3px solid #f3d541;
     
 }
 #home-intro:hover{
-    background-color: #b0c6ea;
+    background-color: #ffe398;
 }
 
 
@@ -33,7 +33,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 3px auto;
 }
 #card-img{
     display: flex;
@@ -46,5 +46,11 @@ img{
 
 #action{
   text-align: center;
+  border: 3px solid black;
+  margin : 10px;
+  height: 500px;
+}
+button{
+    width:100%;
 }
 
